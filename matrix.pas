@@ -12,16 +12,19 @@ program Matrix (input, output);
     tZeilensumme = array [tZeile] of integer;
     tSpaltensumme = array [tSpalte] of integer;
 
+
     var
     A : tMatrix;
     B : tZeilensumme;
     C : tSpaltensumme;
     i : tZeile;
     j : tSpalte;
+    Anzahl : integer;
 
 begin
     { lesen der Matrixwerte in A }
-    writeln('Geben Sie 12 Werte ein: ');
+    Anzahl := ZEILENMAX * SPALTENMAX;
+    writeln('Geben Sie ', Anzahl, ' Werte ein: ');
     for i := 1 to ZEILENMAX do
         for j := 1 to SPALTENMAX do
             readln (A[i, j]);
