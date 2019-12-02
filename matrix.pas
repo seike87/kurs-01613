@@ -21,6 +21,7 @@ program Matrix (input, output);
 
 begin
     { lesen der Matrixwerte in A }
+    writeln('Geben Sie 12 Werte ein: ');
     for i := 1 to ZEILENMAX do
         for j := 1 to SPALTENMAX do
             readln (A[i, j]);
@@ -55,4 +56,4 @@ begin
     for j := 1 to SPALTENMAX do
         write (C[j]:5);
     writeln
-end; { Matrix }
+end. { Matrix }
