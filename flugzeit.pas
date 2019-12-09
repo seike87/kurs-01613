@@ -21,7 +21,7 @@ program Flugzeit (input, output);
     Ankunft,
     Flugdauer : tZeit;
     Eingabe : integer;
-    Ubertrag : tUebertrag;
+    Uebertrag : tUebertrag;
 
 begin
     Flugdauer.h := 0;
