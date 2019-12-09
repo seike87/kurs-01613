@@ -8,8 +8,8 @@ program StringTest (input, output);
     Zeichenkette : string [MAXLAENGE];
 
 begin
-    Zeichenkette := 'Dies ist ein kurzer Satz!';
-    writeln (Zeichenkette);
+    write ('Geben Sie bitte einen kurzen Text mit maximal 100 Zeichen ein: ');
+    readln (Zeichenkette);
     writeln ('Das dritte Zeichen ist: ', Zeichenkette[3]);
     write ('Das letzte Zeichen ist: ');
     writeln (Zeichenkette[length (Zeichenkette)]);
