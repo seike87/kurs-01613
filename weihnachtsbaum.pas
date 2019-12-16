@@ -10,7 +10,7 @@ program Weihnachtsbaum (input,output);
     var
     i : tZaehler; { Laufvariable }
     Hoehe : integer;
-    Zeichen : char;
+    Zeichen : string;
 
 begin
 
@@ -23,10 +23,9 @@ begin
         writeln ('Der Weihnachtsbaum muss schon mindestens eine Einheit hoch sein!')
     else
     begin
-        writeln(LEER, Zeichen, LEER);
         for i := 1 to Hoehe do
-            { Zeichen := Zeichen + i; }
-            writeln(LEER, Zeichen, LEER)
+            Zeichen := Zeichen + 2;
+            writeln(Zeichen)
         end
 
 
