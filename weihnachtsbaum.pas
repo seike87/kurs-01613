@@ -1,14 +1,14 @@
 program Weihnachtsbaum (input,output);
 { Stellt nach Eingabe der Höhe und des Zeichens einen Weihnachtsbaum dar }
+{ Unterste Reihe des Baums ist (Hoehe*2)-1 }
+{ Anzahl der Leerzeichen von oben nach unten ist (((Hoehe*2)-1)-1)/2 }
+
 
     const
     LEER = ' ';
 
-    type
-    tZaehler = 0..maxint;
-
     var
-    i : tZaehler; { Laufvariable }
+    i,
     Hoehe : integer;
     Zeichen : string;
 
@@ -24,10 +24,7 @@ begin
     else
     begin
         for i := 1 to Hoehe do
-          { Zeichen := Zeichen[i+2]; }
-            writeln(i,'. ', Zeichen)
-        end
+            write(Zeichen[(i*2)-1])
 
-
-
+    end
 end. { Weihnachtsbaum }
