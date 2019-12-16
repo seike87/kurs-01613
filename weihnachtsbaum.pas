@@ -24,8 +24,8 @@ begin
     else
     begin
         for i := 1 to Hoehe do
-            Zeichen := Zeichen + 2;
-            writeln(Zeichen)
+          { Zeichen := Zeichen[i+2]; }
+            writeln(Zeichen[i+2])
         end
 
 
