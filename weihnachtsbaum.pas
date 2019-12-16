@@ -25,7 +25,7 @@ begin
     begin
         for i := 1 to Hoehe do
           { Zeichen := Zeichen[i+2]; }
-            writeln(Zeichen[i+2])
+            writeln(i,'. ', Zeichen)
         end
 
 
