@@ -28,8 +28,8 @@ begin
         for i := 1 to Hoehe do
             begin
                 j := ((i*2)-1); { Formel zur Ausgabe der Zeichen }
-                k := (((i*2)-2) div 2); { Formel zur Ausgabe der Leerzeichen }
-                write(k); { Ausgabe Leerzeichen }
+                k := Hoehe - i; { Formel zur Ausgabe der Leerzeichen }
+                write(stringofChar(LEER, k)); { Ausgabe Leerzeichen }
                 writeln(stringofChar(Zeichen, j)); { Ausgabe Zeichen }
             end;
     end
