@@ -1,8 +1,6 @@
 program Weihnachtsbaum (input,output);
 { Stellt nach Eingabe der Höhe und des Zeichens einen Weihnachtsbaum dar }
 { Unterste Reihe des Baums ist (Hoehe*2)-1 }
-{ Anzahl der Leerzeichen von oben nach unten ist (((Hoehe*2)-1)-1)/2 }
-
 
     const
     LEER = ' ';
