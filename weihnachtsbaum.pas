@@ -25,7 +25,12 @@ begin
         writeln ('Der Weihnachtsbaum muss schon mindestens eine Einheit hoch sein!')
     else
     begin
-        for i := 1 to ((Hoehe*2)-1) do
-            writeln(stringofChar(Zeichen, i))
+        for i := 1 to Hoehe do
+            begin
+                j := ((i*2)-1); { Formel zur Ausgabe der Zeichen }
+                k := (((i*2)-2) div 2); { Formel zur Ausgabe der Leerzeichen }
+                write(k); { Ausgabe Leerzeichen }
+                writeln(stringofChar(Zeichen, j)); { Ausgabe Zeichen }
+            end;
     end
 end. { Weihnachtsbaum }
