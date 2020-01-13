@@ -21,7 +21,6 @@ begin
 
     { Zeichenweises Einlesen des Textes und Aufaddieren der Zaehler }
     writeln ('Geben Sie bitte einen Text ein');
-    read(Zeichen);
     while Zeichen <> '.' do { solange Zeichen ungleich . mache }
     begin
         if (Zeichen >= 'a') and (Zeichen <= 'z') then
